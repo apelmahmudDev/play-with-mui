@@ -2,6 +2,8 @@ import { Container, Typography } from "@mui/material";
 import React from "react";
 import CheckBoxComp from "./components/CheckBoxComp";
 import ThemeCustomization from "./components/ThemeCustomization";
+import BorderRadiusCustomize from "./components/BorderRadiusCustomize";
+import DarkMode from "./components/DarkMode";
 
 function App() {
 	return (
@@ -12,6 +14,8 @@ function App() {
 			{/* customize checkbox */}
 			<CheckBoxComp />
 			<ThemeCustomization />
+			<BorderRadiusCustomize />
+			<DarkMode />
 		</Container>
 	);
 }
