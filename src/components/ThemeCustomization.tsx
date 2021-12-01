@@ -1,4 +1,4 @@
-import { createTheme, Theme, ThemeProvider } from "@mui/material/styles";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import React from "react";
 import { red } from "@mui/material/colors";
 import { Typography } from "@mui/material/";
