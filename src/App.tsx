@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container, Typography } from "@mui/material";
+import React from "react";
+import CheckBoxComp from "./components/CheckBoxComp";
+import ThemeCustomization from "./components/ThemeCustomization";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Container>
+			<Typography variant="h4" component="h2" color="secondary">
+				Material Ui Customization components
+			</Typography>
+			{/* customize checkbox */}
+			<CheckBoxComp />
+			<ThemeCustomization />
+		</Container>
+	);
 }
 
 export default App;
