@@ -4,18 +4,33 @@ import { red } from "@mui/material/colors";
 import { Typography } from "@mui/material/";
 
 const ThemeCustomization = () => {
-	const themeColor = createTheme({
+	let theme = createTheme({
 		palette: {
 			error: {
 				main: red[500],
+			},
+			secondary: {
+				main: "#4f4512",
+			},
+		},
+	});
+
+	// change here primary default color
+	theme = createTheme(theme, {
+		palette: {
+			primary: {
+				main: theme.palette.error.main,
 			},
 		},
 	});
 
 	return (
-		<ThemeProvider theme={themeColor}>
-			<Typography variant="h2" color="error">
+		<ThemeProvider theme={theme}>
+			<Typography variant="h2" color="primary">
 				Theme customizations - color
+			</Typography>
+			<Typography component="h2" variant="h5" color="secondary">
+				Hello
 			</Typography>
 		</ThemeProvider>
 	);
