@@ -1,21 +1,26 @@
-import { Button } from "@mui/material";
+import { Button, Stack } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 const MuiButton = () => {
 	return (
-		<Box>
+		<Stack spacing={2} direction="row">
+			<Button size="large" color="secondary" variant="outlined">
+				Mui Button outlined
+			</Button>
+			<Button size="medium" color="secondary" variant="contained">
+				Mui Button contained
+			</Button>
 			<Button
-				color="warning"
-				component="button"
-				disableElevation={true}
-				// disableRipple={true}
-				endIcon="Hello"
-				startIcon="start"
+				endIcon={<DeleteIcon />}
+				size="small"
+				color="error"
+				variant="text"
 			>
 				Mui Button
 			</Button>
-		</Box>
+		</Stack>
 	);
 };
 
