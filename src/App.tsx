@@ -4,6 +4,7 @@ import CheckBoxComp from "./components/CheckBoxComp";
 import ThemeCustomization from "./components/ThemeCustomization";
 import BorderRadiusCustomize from "./components/BorderRadiusCustomize";
 import DarkMode from "./components/DarkMode";
+import CheckBreakPoint from "./components/CheckBreakPoint";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 			<ThemeCustomization />
 			<BorderRadiusCustomize />
 			<DarkMode />
+			<CheckBreakPoint />
 		</Container>
 	);
 }
