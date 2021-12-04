@@ -5,6 +5,7 @@ import ThemeCustomization from "./components/ThemeCustomization";
 import BorderRadiusCustomize from "./components/BorderRadiusCustomize";
 import DarkMode from "./components/DarkMode";
 import CheckBreakPoint from "./components/CheckBreakPoint";
+import MuiButton from "./components/MuiButton";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 			<BorderRadiusCustomize />
 			<DarkMode />
 			<CheckBreakPoint />
+			<MuiButton />
 		</Container>
 	);
 }
