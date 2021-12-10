@@ -7,6 +7,7 @@ import DarkMode from "./components/DarkMode";
 import CheckBreakPoint from "./components/CheckBreakPoint";
 import MuiButton from "./components/MuiButton";
 import theme from "./theme/theme";
+import FieldInput from "./components/FieldInput";
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 				<DarkMode />
 				<CheckBreakPoint />
 				<MuiButton />
+				<FieldInput />
 			</Container>
 		</ThemeProvider>
 	);

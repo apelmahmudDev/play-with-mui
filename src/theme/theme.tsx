@@ -11,18 +11,13 @@ const theme = createTheme({
 		},
 	},
 	components: {
-		MuiButton: {
+		MuiButtonBase: {
 			styleOverrides: {
 				root: {
-					fontSize: "14px",
+					fontSize: "15px",
 					textTransform: "none",
 					borderRadius: "0",
 				},
-			},
-		},
-		MuiButtonBase: {
-			defaultProps: {
-				disableRipple: false,
 			},
 		},
 	},
