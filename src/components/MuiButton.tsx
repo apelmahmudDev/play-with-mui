@@ -6,18 +6,11 @@ import DeleteIcon from "@mui/icons-material/Delete";
 const MuiButton = () => {
 	return (
 		<Stack spacing={2} direction="row">
-			<Button size="large" color="secondary" variant="outlined">
+			<Button disableRipple={true} variant="contained">
 				Mui Button outlined
 			</Button>
-			<Button size="medium" color="secondary" variant="contained">
-				Mui Button contained
-			</Button>
-			<Button
-				endIcon={<DeleteIcon />}
-				size="small"
-				color="error"
-				variant="text"
-			>
+			<Button color="secondary">Mui Button contained</Button>
+			<Button disableRipple={true} variant="contained" endIcon={<DeleteIcon />}>
 				Mui Button
 			</Button>
 		</Stack>
